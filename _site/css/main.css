@@ -1,0 +1,157 @@
+@import url("http://fonts.googleapis.com/css?family=Roboto:500,400");
+* {
+  color: #555f66;
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.75em; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+  line-height: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em; }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: inherit;
+  text-decoration: none; }
+
+h2 {
+  font-size: 1.5em;
+  line-height: 1.5em; }
+
+h3 {
+  font-size: 1.25em;
+  line-height: 1.5em; }
+
+h4 {
+  font-size: 1em;
+  line-height: 0em; }
+
+h5 {
+  font-size: 0.9em;
+  line-height: 1.5em; }
+
+h6 {
+  font-size: 0.7em;
+  line-height: 1.5em; }
+
+.navbar {
+  margin: 0;
+  border: 0;
+  background-color: #f2f2f2; }
+  .navbar .navbar-brand,
+  .navbar .navbar-nav li a {
+    line-height: 75px;
+    height: 75px;
+    padding-top: 0; }
+  .navbar .navbar-brand img {
+    display: inline-block; }
+
+.navbar.transparent {
+  background: transparent; }
+  .navbar.transparent li > a, .navbar.transparent a {
+    color: #fff; }
+    .navbar.transparent li > a:hover, .navbar.transparent a:hover {
+      color: #f2f2f2; }
+
+.full-screen {
+  height: 100vh;
+  margin: 0;
+  padding: 0; }
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column; }
+
+.caption-text {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  color: #fff; }
+
+.generic-berkeley {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/imgs/lolberk.jpg") no-repeat left top;
+  background-size: cover; }
+
+.two-berkeley {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/imgs/Edited/DSC_0045.JPG") no-repeat left top;
+  background-size: cover; }
+
+.three-berkeley {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/imgs/Edited/DSC_0020.JPG") no-repeat left top;
+  background-size: cover; }
+
+.cib-team {
+  background: url("/imgs/lolberk.jpg") no-repeat right top; }
+
+.padded-top {
+  padding-top: 50px; }
+
+.gap-top {
+  margin-top: 50px; }
+
+.gap {
+  margin-bottom: 50px; }
+
+.lg-gap {
+  margin-bottom: 100px; }
+
+.sm-gap {
+  margin-bottom: 25px; }
+
+@media (max-width: 992px) {
+  .gap-on-sm {
+    margin-bottom: 25px; } }
+
+#cover-analyst {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/imgs/Edited/DSC_0042.JPG") no-repeat center;
+  background-size: cover;
+  margin-bottom: 50px; }
+  #cover-analyst h1 {
+    color: #fff; }
+
+#cover-contact {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/imgs/Edited/DSC_0973.JPG") no-repeat center;
+  background-size: cover;
+  margin-bottom: 50px; }
+  #cover-contact h1 {
+    color: #fff; }
+
+#cover-about {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/imgs/team.jpg") no-repeat center;
+  background-size: cover;
+  margin-bottom: 50px; }
+  #cover-about h1 {
+    color: #fff; }
+
+#cover-recruitment {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/imgs/Edited/DSC_0918.JPG") no-repeat center;
+  background-size: cover;
+  margin-bottom: 50px; }
+  #cover-recruitment h1 {
+    color: #fff; }
+
+.jobs-row {
+  margin-bottom: 20px; }
+
+.borderless tbody tr td, .borderless thead tr th {
+  border: none; }
+
+.contact-img {
+  height: 300px;
+  margin: 0 auto;
+  margin-bottom: 10px; }
+
+.gray {
+  background-color: #f2f2f2; }
+
+.logo {
+  width: 222px; }

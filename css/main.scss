@@ -1,0 +1,196 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+@import url("http://fonts.googleapis.com/css?family=Roboto:500,400");
+$gap: 50px;
+$large-gap: 100px;
+$sm-gap: 25px;
+$gray: #f2f2f2;
+$white: #fff;
+
+* {
+    color: #555f66;
+    font-family: "Roboto", Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.75em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    line-height: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+h3 {
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+
+h4 {
+    font-size: 1em;
+    line-height: 0em;
+}
+
+h5 {
+    font-size: 0.9em;
+    line-height: 1.5em;
+}
+
+h6 {
+    font-size: 0.7em;
+    line-height: 1.5em;
+}
+
+.navbar {
+    margin: 0;
+    border: 0;
+    background-color: $gray;
+    .navbar-brand, 
+    .navbar-nav li a {
+        line-height: 75px;
+        height: 75px;
+        padding-top: 0;
+    }
+
+    .navbar-brand img {
+        display: inline-block;
+    }
+}
+
+.navbar.transparent {
+    background: transparent;
+
+    li > a, a {
+        color: $white;
+        &:hover {
+            color: $gray;
+        }
+    }
+}
+
+.full-screen {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.caption-text {
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    color: $white;
+}
+
+.generic-berkeley {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/imgs/lolberk.jpg') no-repeat left top;
+    background-size: cover;
+}
+
+
+.two-berkeley {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/imgs/Edited/DSC_0045.JPG') no-repeat left top;
+    background-size: cover;
+}
+
+.three-berkeley {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/imgs/Edited/DSC_0020.JPG') no-repeat left top;
+    background-size: cover;
+}
+
+
+
+.cib-team {
+    background: url('/imgs/lolberk.jpg') no-repeat right top;
+}
+
+.padded-top {
+    padding-top: $gap;
+}
+
+.gap-top {
+    margin-top: $gap;
+}
+
+.gap {
+    margin-bottom: $gap;
+}
+
+.lg-gap {
+    margin-bottom: $large-gap;
+}
+
+.sm-gap {
+    margin-bottom: $sm-gap;
+}
+
+.gap-on-sm {
+    @media (max-width: 992px) {
+        margin-bottom: $sm-gap;
+    }
+}
+
+@mixin cover-photo($img) {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url($img) no-repeat center;
+    background-size: cover;
+    margin-bottom: $gap;
+    h1 {
+        color: $white;
+    }
+}
+
+#cover-analyst {
+    @include cover-photo('/imgs/Edited/DSC_0042.JPG');
+}
+
+#cover-contact {
+    @include cover-photo('/imgs/Edited/DSC_0973.JPG');
+}
+
+#cover-about {
+    @include cover-photo('/imgs/team.jpg');
+}
+
+#cover-recruitment {
+    @include cover-photo('/imgs/Edited/DSC_0918.JPG');
+}
+
+.jobs-row {
+    margin-bottom: 20px;
+}
+
+.borderless tbody tr td, .borderless thead tr th {
+    border: none;
+}
+
+.contact-img {
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.gray {
+    background-color: $gray;
+}
+
+.logo {
+    width: 222px;
+}
