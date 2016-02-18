@@ -173,6 +173,10 @@ h6 {
     @include cover-photo('/imgs/Edited/DSC_0918.JPG');
 }
 
+#cover-contests {
+    @include cover-photo('/imgs/farallon_golden_gate.jpg')
+}
+
 .jobs-row {
     margin-bottom: 20px;
 }
