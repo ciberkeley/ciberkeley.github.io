@@ -7,15 +7,10 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
   <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.base_url }}">
-  <link rel="stylesheet" href="{{ "/css/animate.css" | prepend: site.base_url }}">
-  
-  <link rel="stylesheet" href="{{ "/css/style.css" | prepend: site.base_url }}">
-  <link rel="stylesheet" href="{{ "/css/blocks.css" | prepend: site.base_url }}">
-  <link rel="stylesheet" href="{{ "/css/cubeportfolio.css" | prepend: site.base_url }}">
-  <link rel="stylesheet" href="{{ "/css/style-switcher.css" | prepend: site.base_url }}">
-  <link rel="stylesheet" href="{{ "/css/custom-cubeportfolio.css" | prepend: site.base_url }}">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+  <script src="js/jquery.min.js"> </script>
+  <script src="js/bootstrap.min.js"> </script>
 </head>
